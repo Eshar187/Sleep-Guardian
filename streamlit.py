@@ -37,7 +37,7 @@ def page1():
     st.markdown("<h3 style='text-align:side;'>Sleep Quality</h3>", unsafe_allow_html=True)
     Sleepquality=st.slider("Rate yourself(1-10)",1,10)
     
-    st.markdown("<h3 style='text-align:side;'>Pyhsical Activity</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align:side;'>Physical Activity</h3>", unsafe_allow_html=True)
     PhysicalActivity=st.number_input("Assuming minimum activity level be (10-100)",10,100)
     
     st.markdown("<h3 style='text-align:side;'>Stress Level</h3>", unsafe_allow_html=True)
