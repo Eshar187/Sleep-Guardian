@@ -1,10 +1,12 @@
 ############################################ Required Packages #################################################
+
 import streamlit as st
 import sklearn
 import pickle
 import numpy as np
 
 ###################################### Main logo #######################################################
+
 st.image(r"Screenshot (91).png")
 
 def forward():
@@ -14,8 +16,11 @@ def backward():
     st.session_state.page = 'page1'
 
 my_data=[]
+
 ##################################### Getting DATA From user ########################################################
+
 def page1():
+    
     ########## Details ###############
 
     st.title('Details')
@@ -178,7 +183,7 @@ def page2():
     my_data.extend([gender,user_input["Age"],user_input['Sleep Duration'],user_input['Quality of Sleep'],user_input['Physical Activity Level'],user_input["Stress Level"],bmi,user_input['Heart Rate'],user_input['Daily Steps'],user_input["Systolic"],user_input["Diastolic"],user_input['Occupation']])
 
  ########################################## Working on Occupation ################################################### 
- 
+
 #As occupation data is not in that form that machine can learn it should be in [0,0,0,0,0] form
 
     occ = my_data.pop() # so poped the last index value from my_data list
